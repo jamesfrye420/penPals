@@ -1,0 +1,8 @@
+query SubPosts($subIdentifier: String!, $limit: Int!) {
+  subPosts(subIdentifier: $subIdentifier, limit: $limit) {
+    hasMore
+    posts {
+      ...PostSnippet
+    }
+  }
+}

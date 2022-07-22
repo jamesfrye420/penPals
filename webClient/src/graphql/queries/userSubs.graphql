@@ -1,0 +1,5 @@
+query UserSubs($username: String!) {
+  userSubs(username: $username) {
+    ...SubSnippet
+  }
+}

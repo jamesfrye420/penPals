@@ -1,0 +1,14 @@
+mutation registerSub($options: SubDetailsInput!) {
+  registerSub(options: $options) {
+    errors {
+      field
+      message
+    }
+    sub {
+      id
+      name
+      subIdentifier
+      createdAt
+    }
+  }
+}

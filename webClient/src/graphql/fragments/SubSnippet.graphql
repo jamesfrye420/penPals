@@ -1,0 +1,12 @@
+fragment SubSnippet on Sub {
+  id
+  name
+  subIdentifier
+  numberOfFollowers
+  followStatus
+  createdAt
+  creator {
+    id
+    username
+  }
+}

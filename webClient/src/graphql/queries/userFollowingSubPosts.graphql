@@ -1,0 +1,8 @@
+query UserFollowingSubsPosts($limit: Int!, $cursor: String) {
+  userFollowingSubsPosts(limit: $limit, cursor: $cursor) {
+    hasMore
+    posts {
+      ...PostSnippet
+    }
+  }
+}

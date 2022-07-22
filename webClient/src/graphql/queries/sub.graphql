@@ -1,0 +1,5 @@
+query Sub($subIdentifier: String!) {
+  sub(subIdentifier: $subIdentifier) {
+    ...SubSnippet
+  }
+}
