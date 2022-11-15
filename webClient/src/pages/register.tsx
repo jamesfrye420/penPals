@@ -30,7 +30,6 @@ const Register: NextPage = () => {
           if (response.data?.registerUser.errors) {
             setErrors(toErrorMap(response.data.registerUser.errors));
           } else if (response.data?.registerUser.user) {
-            // worked
             router.replace('/');
           }
         }}
